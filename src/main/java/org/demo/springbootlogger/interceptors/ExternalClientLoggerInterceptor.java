@@ -1,7 +1,7 @@
 package org.demo.springbootlogger.interceptors;
 
-import org.sds.springbootlogger.utils.ExternalRestClientLoggerUtil;
-import org.sds.springbootlogger.utils.ExternalSoapClientLoggerUtil;
+import org.demo.springbootlogger.utils.ExternalRestClientLoggerUtil;
+import org.demo.springbootlogger.utils.ExternalSoapClientLoggerUtil;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.ws.client.support.interceptor.ClientInterceptor;
 

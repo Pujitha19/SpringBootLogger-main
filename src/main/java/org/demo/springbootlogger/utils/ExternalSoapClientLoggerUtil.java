@@ -1,4 +1,4 @@
-package org.sds.springbootlogger.utils;
+package org.demo.springbootlogger.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
