@@ -1,4 +1,4 @@
-package org.sds.springbootlogger.interceptors;
+package org.demo.springbootlogger.interceptors;
 
 import org.sds.springbootlogger.utils.ExternalRestClientLoggerUtil;
 import org.sds.springbootlogger.utils.ExternalSoapClientLoggerUtil;
@@ -8,7 +8,7 @@ import org.springframework.ws.client.support.interceptor.ClientInterceptor;
 import java.util.Collections;
 import java.util.List;
 
-public class ClientLoggerInterceptor {
+public class ExternalClientLoggerInterceptor {
 
     /**
      * Logger Utility for {@link org.springframework.ws.client.core.WebServiceTemplate}

@@ -33,6 +33,11 @@ public class InternalRestClientLoggerUtil implements Filter {
     private static final Logger log = LoggerFactory.getLogger(InternalRestClientLoggerUtil.class);
 
     @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+
+    }
+
+    @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
         CustomHttpRequestWrapper requestWrapper = new CustomHttpRequestWrapper((HttpServletRequest) servletRequest);
@@ -56,6 +61,11 @@ public class InternalRestClientLoggerUtil implements Filter {
                 .append("\nResponse Body: ").append(responseWrapper.getHttpResponseBody())
                 .append("\n======================================== Internal Flow Ends ========================================");
         log.info(responseBuilder.toString());
+    }
+
+    @Override
+    public void destroy() {
+
     }
 
     private String getRequestHeaders(CustomHttpRequestWrapper requestWrapper) {
