@@ -1,4 +1,4 @@
-package org.sds.springbootlogger.utils;
+package org.demo.springbootlogger.utils;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.TeeOutputStream;
